@@ -74,11 +74,11 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonListo"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_x="113dp"
-        android:layout_y="279dp"
+        android:layout_y="275dp"
         android:backgroundTint="#BE9FF5"
         android:text="LISTO!!"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2" />

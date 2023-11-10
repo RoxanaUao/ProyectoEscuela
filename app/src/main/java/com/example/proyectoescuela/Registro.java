@@ -18,7 +18,7 @@ import androidx.annotation.NonNull;
 public class Registro extends AppCompatActivity {
     private static final String TAG = "Registro";
     private EditText  passwordEditText, cedulaEditText,nombreEditText, correoEditText, telefonoEditText;
-    private Button RegistroButton, VolverButton;
+    //private Button RegistroButton, VolverButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class Registro extends AppCompatActivity {
         correoEditText = findViewById(R.id.correoEditText1);
         passwordEditText = findViewById(R.id.passwordEditText);
         cedulaEditText = findViewById(R.id.editTextCedula);
-        nombreEditText = findViewById(R.id.passwordEditText);
+        nombreEditText = findViewById(R.id.nombreEditText1);
         telefonoEditText = findViewById(R.id.telefonoEditText1);
 
         Button RegistroButton = findViewById(R.id.buttonRegistrar);

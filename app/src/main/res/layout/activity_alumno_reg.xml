@@ -23,7 +23,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/buttonRegistrar2"
+                android:id="@+id/buttonRecoger"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -133,7 +133,7 @@
         android:layout_width="309dp"
         android:layout_height="66dp"
         android:layout_x="51dp"
-        android:layout_y="326dp"
+        android:layout_y="320dp"
         android:backgroundTint="#0D204E"
         android:text="AGREGAR"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />

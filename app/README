@@ -1,0 +1,42 @@
+Pendiente back de AlumnoReg, Carril y Wait line, y si es necesario en el login crear el objeto.
+
+Para alumnorReg:
+    - Investigar como desplegar tabla(el como se consulta es:
+    db.collection("alumnos")
+            .get()
+            .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    if (task.isSuccessful()) {
+                        for (QueryDocumentSnapshot document : task.getResult()) {
+                            Log.d(TAG, document.getId() + " => " + document.getData());
+                        }
+                    } else {
+                        Log.w(TAG, "Error getting documents.", task.getException());
+                    }
+    - Para el ingreso del objeto padre se tiene esta info:
+
+    db.collection("padres")
+                .whereEqualTo("cedula", cedula)
+                .whereEqualTo("contraseña", email)
+                .get()
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        if (!task.getResult().isEmpty()) {
+                            // No existe un documento que coincida con cedula y email
+                            // Crear un objeto Padre
+                            Padre nuevoPadre = new Padre(cedula, email, nombre, telefono, password, "carril_defecto");
+
+                            // Navegar hacia la actividad Carril y pasar el objeto Padre como extra
+                            Intent intent = new Intent(Registro.this, CarrilActivity.class);
+                            intent.putExtra("padre", nuevoPadre);
+                            startActivity(intent);
+                            finish(); // Cierra la actividad actual
+                            Toast.makeText(this, "Usuario ya registrado", Toast.LENGTH_SHORT).show();
+                        } else {
+
+                        }
+                    } else {
+                        Log.e(TAG, "Error al realizar la consulta: ", task.getException());
+                    }
+                });
