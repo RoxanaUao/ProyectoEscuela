@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".AlumnoReg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_x="80dp"
+            android:layout_y="412dp"
+            android:background="#EE4B82"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonRegistrar2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#EF4B83"
+                android:text="RECOGER"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="131dp"
+            android:layout_height="match_parent"
+            android:layout_x="80dp"
+            android:layout_y="412dp"
+            android:background="#2196F3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonAlumnos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#2196F3"
+                android:text="REGISTRO"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_x="80dp"
+            android:layout_y="412dp"
+            android:background="#F9BBD0"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonSalir"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#F8BACF"
+                android:text="SALIR"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="284dp"
+        android:layout_height="wrap_content"
+        android:layout_x="52dp"
+        android:layout_y="180dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_prescolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="PRE-ESCOLAR"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/radio_primaria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="PRIMARIA"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/radio_bachillerato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="BACHILLERATO"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="309dp"
+        android:layout_height="45dp"
+        android:layout_x="53dp"
+        android:layout_y="133dp"
+        android:background="#F8E9E9"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="55dp"
+        android:layout_y="96dp"
+        android:text="Nombre del alumno:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="309dp"
+        android:layout_height="66dp"
+        android:layout_x="51dp"
+        android:layout_y="326dp"
+        android:backgroundTint="#0D204E"
+        android:text="AGREGAR"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TableLayout
+        android:layout_width="330dp"
+        android:layout_height="269dp"
+        android:layout_x="42dp"
+        android:layout_y="420dp"
+        android:background="#FFFFFF"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:background="#0C1F4B"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="Nombre"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:background="#0D204E"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="Grado"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#FFFFFF" />
+            />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="154dp"
+                android:layout_height="match_parent"
+                android:padding="3dip"
+                android:text="REEMPLAZAS CON @string/table_layout_4_save" />
+
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:text="Reemplazas" />
+        </TableRow>
+    </TableLayout>
+
+</AbsoluteLayout>

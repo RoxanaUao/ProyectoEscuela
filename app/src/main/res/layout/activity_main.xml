@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBD6ED"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="293dp"
+        android:layout_height="360dp"
+        android:layout_x="59dp"
+        android:layout_y="60dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="LOG-IN"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="#B63E67" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cedula:" />
+
+        <EditText
+            android:id="@+id/editTextCedula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contraseña:" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/buttonRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:backgroundTint="#EF4B83"
+            android:text="Ingresar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonVolver"
+        android:layout_width="347dp"
+        android:layout_height="75dp"
+        android:layout_x="35dp"
+        android:layout_y="473dp"
+        android:backgroundTint="#2196F3"
+        android:text="Registrarse"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+</AbsoluteLayout>
